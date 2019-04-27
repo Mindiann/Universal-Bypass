@@ -1,0 +1,17 @@
+// Some examples of what you can do with custom bypasses:
+domainBypass("https://thinana.xyz/?ref=1", function()
+{
+	ensureDomLoaded(function()
+	{
+		safelyNavigate(a.querySelector("a#skip_button[href]").href)
+		// Make sure to use safelyNavigate(url) to avoid bad redirects.
+	})
+})
+hrefBypass(thinana.(wyz), function()
+{
+	// This bypass would trigger on example.com
+	// if we didn't already have a bypass for it.
+})
+// Feel free to replace this with your own code now!
+// Changes are saved automatically.
+
